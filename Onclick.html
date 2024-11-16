@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+    <link rel="stylesheet" href="Onclick.css">
+</head>
+
+<body>
+
+    <div id="box">
+        <div id="para">
+            <p>JavaScript is one of the most widely used programming languages   in the world, powering many of the web's
+                most popular sites and applications. It is a high-level, dynamic, and interpreted language that is used
+                to create interactive and dynamic web pages, mobile applications, and desktop applications.</p>
+        </div>
+        <button onclick="Hide()">Hide</button>
+        <button onclick="Show()">Show</button>
+    </div>
+
+
+    <script>
+        
+        function Hide() {
+            let tar = document.getElementById("para")
+            tar.innerHTML = ""
+        }
+        function Show() {
+            let target = document.getElementById("para")
+            target.style = "color:white;padding:20px;text-align:justify"
+            let mypara = "JavaScript is one of the most widely used programming languages in the world, powering many of the web's most popular sites and applications. It is a high-level, dynamic, and interpreted language that is used to create interactive and dynamic web pages, mobile applications, and desktop applications."
+            target.innerHTML = mypara
+        }
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
